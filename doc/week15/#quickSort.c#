@@ -1,0 +1,16 @@
+void quickSort(int arr[],int left,int right){
+  int pivot, i, j;
+  if(left<right){
+    i = left; j = right+1;
+    pivot = arr[left];
+
+    do{
+      do i++; while(arr[i]<pivot);
+      do j--; while(arr[j]>pivot);
+      if(i<j) swap(&arr[i],&arr[j]);
+    }while(i<j);
+    swap(&arr[left],&arr[j]);
+    quickSort(arr,left,j-1);
+    quickSort(arr,j+1,right);
+  }
+}

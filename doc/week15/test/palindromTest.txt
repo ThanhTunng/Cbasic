@@ -1,0 +1,28 @@
+int main() {
+
+	int op;
+
+	do {
+		printf("---------------------------------------------------\n");
+		printf"1. \n");
+		printf("2. \n");
+
+		printf("Your option : ");
+		scanf("%d", &op);
+
+		printf("---------------------------------------------------\n");
+		
+		switch (op) {
+		case 1: {
+			
+			break;
+		}
+		case 2: {
+		
+			break;
+		}
+		}
+	} while(op != 2);
+
+	return(0);
+}
